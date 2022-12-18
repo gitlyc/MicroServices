@@ -22,6 +22,18 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.4.RELEASE</version>
     </parent>
+    <repositories>
+        <repository>
+            <id>spring</id>
+            <url>https://maven.aliyun.com/repository/spring</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <!--
         集中定义依赖组件版本号，但不引入，
         在子工程中用到声明的依赖时，可以不加依赖的版本号，
